@@ -1,4 +1,7 @@
-var plugins = []
+var plugins = [{
+      plugin: require('/Users/lawrence_wakefield/Documents/dev/gatsby-shop/gatsby/gatsby-ssr'),
+      options: {"plugins":[]},
+    }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
