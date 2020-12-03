@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import PatchEvent, { set, unset } from 'part:@sanity/form-builder/patch-event';
 
@@ -19,7 +21,7 @@ function PriceInput({ type, value, onChange, inputComponent }) {
       <input
         type={type.name}
         value={value}
-        onChange={event => onChange(createPatchFrom(event.target.value))}
+        onChange={(event) => onChange(createPatchFrom(event.target.value))}
         ref={inputComponent}
       />
     </div>
